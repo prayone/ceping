@@ -1,0 +1,39 @@
+
+<include src="../templates/header.wxml" />
+
+<!--页面布局显示文件  -->
+<button type="default" bindtap="defaultClick" > default </button>
+<button type="primary" bindtap="priClick"> {{btntxt}} </button>
+<view wx:if="{{show}}">{{txt}}....1</view>
+<view wx:else="{{show}}">{{txt}}....2</view>
+
+
+<view wx:for="{{news}}" wx:for-item="ina" wx:for-index="ix">
+  循环内容是：{{ix}}—{{ina}}
+</view>
+
+<import src="../templates/footer" />
+<template is="footer1" data='{{text:"这是引用模板的时候传过来的数据"}}'/>
+<template is="footer2" data='{{text:"这是引用模板的时候传过来的数据"}}'/>
+<template is="footer3" data='{{text:"这是引用模板的时候传过来的数据"}}'/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view> -->

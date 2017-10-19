@@ -1,0 +1,9 @@
+<template name="footer1">
+    <text>这是import引入的footer1--{{text}}</text>
+</template>
+<template name="footer2">
+    <text>这是import引入的footer2--{{text}}</text>
+</template>
+<template name="footer3">
+    <text>这是import引入的footer3--{{text}}</text>
+</template>

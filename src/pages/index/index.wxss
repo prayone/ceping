@@ -1,0 +1,4 @@
+/* src/pages/index/index.wxss */
+.txt{
+  color: red;
+}
